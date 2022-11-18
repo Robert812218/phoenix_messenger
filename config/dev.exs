@@ -5,7 +5,7 @@ config :phx_messenger, PhxMessenger.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
-  database: "phx_messenger_dev",
+  database: "postgres",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
