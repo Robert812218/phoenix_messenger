@@ -32,3 +32,5 @@ phx_messenger-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# database user/pass
+/config/dev.exs

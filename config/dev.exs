@@ -3,9 +3,9 @@ import Config
 # Configure your database
 config :phx_messenger, PhxMessenger.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "123",
   hostname: "localhost",
-  database: "postgres",
+  database: "phx_1_db",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
