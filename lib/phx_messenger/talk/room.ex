@@ -1,19 +1,20 @@
 defmodule PhxMessenger.Talk.Room do
-	use Ecto.Schema
-	import Ecto.Changeset
+  use Ecto.Schema
+  import Ecto.Changeset
+  alias PhxMessenger.Talk.Room
 
-	schema "rooms" do
-		field :description, :string
-		field :name, :string
-		field :topic, :string
+  schema "rooms" do
+    field :description, :string
+    field :name, :string
+    field :topic, :string
 
-		timestamps()
-	end
+    timestamps()
+  end
 
-	@doc false
-	def changeset(room, attrs) do
-		room
-		|> cast(attrs, [:name, :description, :topic])
-		|> validate_required([:name, :description, :topic])
-	end
+  @doc false
+  def changeset(%Room{} = room, attrs) do
+    room
+    |> cast(attrs, [:name, :description, :topic])
+    |> validate_required([:name])
+  end
 end
